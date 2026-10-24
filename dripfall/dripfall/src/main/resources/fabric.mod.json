@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "dripfall",
+  "version": "${version}",
+  "name": "Mojang",
+  "description": "DripFall (K) + DripClient (P): nametag, tracer, znajomi, ClickGUI.",
+  "authors": [
+    "Ty"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.dripfall.DripFall"
+    ],
+    "client": [
+      "com.example.dripfall.client.DripFallClient",
+      "com.example.dripclient.DripClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
